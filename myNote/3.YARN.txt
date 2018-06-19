@@ -1,26 +1,26 @@
-YARN
+ï»¿YARN
 Yet Another Resource Negotiator
-Í¨ÓÃµÄ×ÊÔ´¹ÜÀíÏµÍ³
+é€šç”¨çš„èµ„æºç®¡ç†ç³»ç»Ÿ
 
-YARN¼Ü¹¹£º
-1£© ResourceManager : RM
-	Õû¸ö¼¯ÈºÌá¹©·þÎñµÄRMÖ»ÓÐÒ»¸ö£¬Ìá½»Ò»¸ö×÷Òµ/É±ËÀÒ»¸ö×÷Òµ
-	×é¼þ£º Scheduler and ApplicationsManager.
-2£© NodeManager  :  NM
-	¼¯ÈºÖÐÓÐ¶à¸ö£¬¸ºÔð×Ô¼º±¾Éí½Úµã×ÊÔ´¹ÜÀíºÍÊ¹ÓÃ
-	¶¨Ê±ÏòRM»ã±¨±¾½ÚµãµÄ×ÊÔ´Ê¹ÓÃÇé¿ö
-	½ÓÊÜ²¢´¦ÀíÀ´×ÔRMµÄÃüÁî ±ÈÈçÆô¶¯Container
-	´¦ÀíÀ´×ÔAMµÄÃüÁî
-3£© ApplicationMaster :  AM
-	Ã¿¸öÓ¦ÓÃ³ÌÐò¶ÔÓ¦Ò»¸öAM(Map Reduce£¬Spark)£¬¸ºÔðÓ¦ÓÃ³ÌÐòµÄ¹ÜÀí
-	ÎªÓ¦ÓÃ³ÌÐòÏòRMÉêÇë×ÊÔ´£¬·ÖÅä¸øÄÚ²¿Task
-	ÐèÒªÓëNMÍ¨ÐÅ£ºÆô¶¯/Í£Ö¹task
-4£© Container
-	·â×°ÁËCPU£¬Memory×ÊÔ´µÄÒ»¸öÈÝÆ÷£¬Ò»¸öÈÎÎñÔËÐÐ»·¾³µÄ³éÏó
-5£© Client
-	Ìá½»×÷Òµ
-	²éÑ¯×÷ÒµµÄÔËÐÐ½ø¶È
-	É±ËÀ×÷Òµ
+YARNæž¶æž„ï¼š
+1ï¼‰ ResourceManager : RM
+	æ•´ä¸ªé›†ç¾¤æä¾›æœåŠ¡çš„RMåªæœ‰ä¸€ä¸ªï¼Œæäº¤ä¸€ä¸ªä½œä¸š/æ€æ­»ä¸€ä¸ªä½œä¸š
+	ç»„ä»¶ï¼š Scheduler and ApplicationsManager.
+2ï¼‰ NodeManager  :  NM
+	é›†ç¾¤ä¸­æœ‰å¤šä¸ªï¼Œè´Ÿè´£è‡ªå·±æœ¬èº«èŠ‚ç‚¹èµ„æºç®¡ç†å’Œä½¿ç”¨
+	å®šæ—¶å‘RMæ±‡æŠ¥æœ¬èŠ‚ç‚¹çš„èµ„æºä½¿ç”¨æƒ…å†µ
+	æŽ¥å—å¹¶å¤„ç†æ¥è‡ªRMçš„å‘½ä»¤ æ¯”å¦‚å¯åŠ¨Container
+	å¤„ç†æ¥è‡ªAMçš„å‘½ä»¤
+3ï¼‰ ApplicationMaster :  AM
+	æ¯ä¸ªåº”ç”¨ç¨‹åºå¯¹åº”ä¸€ä¸ªAM(Map Reduceï¼ŒSpark)ï¼Œè´Ÿè´£åº”ç”¨ç¨‹åºçš„ç®¡ç†
+	ä¸ºåº”ç”¨ç¨‹åºå‘RMç”³è¯·èµ„æºï¼Œåˆ†é…ç»™å†…éƒ¨Task
+	éœ€è¦ä¸ŽNMé€šä¿¡ï¼šå¯åŠ¨/åœæ­¢task
+4ï¼‰ Container
+	å°è£…äº†CPUï¼ŒMemoryèµ„æºçš„ä¸€ä¸ªå®¹å™¨ï¼Œä¸€ä¸ªä»»åŠ¡è¿è¡ŒçŽ¯å¢ƒçš„æŠ½è±¡
+5ï¼‰ Client
+	æäº¤ä½œä¸š
+	æŸ¥è¯¢ä½œä¸šçš„è¿è¡Œè¿›åº¦
+	æ€æ­»ä½œä¸š
 
 etc/hadoop/mapred-site.xml:
 <configuration>
